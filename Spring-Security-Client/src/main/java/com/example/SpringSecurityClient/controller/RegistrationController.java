@@ -4,6 +4,7 @@ import com.example.SpringSecurityClient.entity.User;
 import com.example.SpringSecurityClient.event.RegistrationCompletionEvent;
 import com.example.SpringSecurityClient.model.UserModel;
 import com.example.SpringSecurityClient.service.UserService;
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEvent;
 import org.springframework.context.ApplicationEventPublisher;
@@ -17,12 +18,21 @@ public class RegistrationController {
     @Autowired
     private ApplicationEventPublisher eventPublisher;
 
-    private String registerUser(@RequestBody UserModel userModel) {
+    private String registerUser
+            (@RequestBody UserModel userModel, final HttpServletRequest request) {
         User user = userService.registerUser(userModel);
         eventPublisher.publishEvent(new RegistrationCompletionEvent(
                 user,
-                "url"
+                getApplicationUrl(request)
         ));
         return "Success";
+    }
+
+    private String getApplicationUrl(HttpServletRequest request) {
+        return "http://"+
+                request.getServerName()+
+                ":"+
+                request.getServerPort()+
+                request.getContextPath();
     }
 }

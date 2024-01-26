@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f59dca8-7d07-4274-963e-73fc8d83329f" name="Changes" comment="Added Password Encoder and User Model">
-      <change afterPath="$PROJECT_DIR$/Spring-Security-Client/src/main/java/com/example/SpringSecurityClient/entity/VerificationToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring-Security-Client/src/main/java/com/example/SpringSecurityClient/event/RegistrationCompletionEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring-Security-Client/src/main/java/com/example/SpringSecurityClient/event/listener/RegistrationCompletionEventListener.java" afterDir="false" />
+    <list default="true" id="9f59dca8-7d07-4274-963e-73fc8d83329f" name="Changes" comment="Added RegistrationCompletionEventListener and RegistrationCompletionEvent">
+      <change afterPath="$PROJECT_DIR$/Spring-Security-Client/src/main/java/com/example/SpringSecurityClient/repository/VerificationTokenRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring-Security-Client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-Security-Client/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spring-Security-Client/src/main/java/com/example/SpringSecurityClient/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-Security-Client/src/main/java/com/example/SpringSecurityClient/controller/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Security-Client/src/main/java/com/example/SpringSecurityClient/event/RegistrationCompletionEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-Security-Client/src/main/java/com/example/SpringSecurityClient/event/RegistrationCompletionEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Security-Client/src/main/java/com/example/SpringSecurityClient/event/listener/RegistrationCompletionEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-Security-Client/src/main/java/com/example/SpringSecurityClient/event/listener/RegistrationCompletionEventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Security-Client/src/main/java/com/example/SpringSecurityClient/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-Security-Client/src/main/java/com/example/SpringSecurityClient/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Security-Client/src/main/java/com/example/SpringSecurityClient/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-Security-Client/src/main/java/com/example/SpringSecurityClient/service/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -105,7 +107,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706249450598</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added RegistrationCompletionEventListener and RegistrationCompletionEvent">
+      <option name="closed" value="true" />
+      <created>1706251549267</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1706251549267</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -113,6 +123,7 @@
     <MESSAGE value="Added Spring Security Client Module" />
     <MESSAGE value="Added Structure Classes" />
     <MESSAGE value="Added Password Encoder and User Model" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Password Encoder and User Model" />
+    <MESSAGE value="Added RegistrationCompletionEventListener and RegistrationCompletionEvent" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added RegistrationCompletionEventListener and RegistrationCompletionEvent" />
   </component>
 </project>
