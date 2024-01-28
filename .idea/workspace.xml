@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f59dca8-7d07-4274-963e-73fc8d83329f" name="Changes" comment="Added RegistrationCompletionEventListener and RegistrationCompletionEvent">
-      <change afterPath="$PROJECT_DIR$/Spring-Security-Client/src/main/java/com/example/SpringSecurityClient/repository/VerificationTokenRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="9f59dca8-7d07-4274-963e-73fc8d83329f" name="Changes" comment="Added mocking of sending verification email">
+      <change afterPath="$PROJECT_DIR$/Spring-Security-Client/src/main/java/com/example/SpringSecurityClient/controller/HelloController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Security-Client/src/main/java/com/example/SpringSecurityClient/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-Security-Client/src/main/java/com/example/SpringSecurityClient/config/WebSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spring-Security-Client/src/main/java/com/example/SpringSecurityClient/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-Security-Client/src/main/java/com/example/SpringSecurityClient/controller/RegistrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring-Security-Client/src/main/java/com/example/SpringSecurityClient/event/RegistrationCompletionEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-Security-Client/src/main/java/com/example/SpringSecurityClient/event/RegistrationCompletionEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spring-Security-Client/src/main/java/com/example/SpringSecurityClient/event/listener/RegistrationCompletionEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-Security-Client/src/main/java/com/example/SpringSecurityClient/event/listener/RegistrationCompletionEventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Security-Client/src/main/java/com/example/SpringSecurityClient/repository/VerificationTokenRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-Security-Client/src/main/java/com/example/SpringSecurityClient/repository/VerificationTokenRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spring-Security-Client/src/main/java/com/example/SpringSecurityClient/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-Security-Client/src/main/java/com/example/SpringSecurityClient/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spring-Security-Client/src/main/java/com/example/SpringSecurityClient/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-Security-Client/src/main/java/com/example/SpringSecurityClient/service/UserServiceImpl.java" afterDir="false" />
     </list>
@@ -22,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -44,6 +44,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.SpringSecurityClientApplication.executor&quot;: &quot;Run&quot;,
     &quot;Maven.Spring-Security-Client [clean].executor&quot;: &quot;Run&quot;,
     &quot;Maven.Spring-Security-Client [install].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -51,13 +52,33 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Visual Studio\Spring-Security-Tutorial\Spring-Security-Tutorial" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="SpringSecurityClientApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.SpringSecurityClient.SpringSecurityClientApplication" />
+      <module name="Spring-Security-Client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.SpringSecurityClient.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SpringSecurityClientApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -115,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706251549267</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added mocking of sending verification email">
+      <option name="closed" value="true" />
+      <created>1706270964052</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1706270964052</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -124,6 +153,7 @@
     <MESSAGE value="Added Structure Classes" />
     <MESSAGE value="Added Password Encoder and User Model" />
     <MESSAGE value="Added RegistrationCompletionEventListener and RegistrationCompletionEvent" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added RegistrationCompletionEventListener and RegistrationCompletionEvent" />
+    <MESSAGE value="Added mocking of sending verification email" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added mocking of sending verification email" />
   </component>
 </project>

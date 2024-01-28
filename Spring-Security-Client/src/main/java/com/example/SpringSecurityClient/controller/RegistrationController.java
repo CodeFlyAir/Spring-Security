@@ -8,8 +8,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEvent;
 import org.springframework.context.ApplicationEventPublisher;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class RegistrationController {
@@ -18,6 +17,7 @@ public class RegistrationController {
     @Autowired
     private ApplicationEventPublisher eventPublisher;
 
+    @PostMapping("/register")
     private String registerUser
             (@RequestBody UserModel userModel, final HttpServletRequest request) {
         User user = userService.registerUser(userModel);
@@ -26,6 +26,13 @@ public class RegistrationController {
                 getApplicationUrl(request)
         ));
         return "Success";
+    }
+
+    @GetMapping("/verify")
+    private String verifyToken(@RequestParam("token") String token){
+        if(userService.validateToken(token))
+            return "User Verified";
+        return "Bad User";
     }
 
     private String getApplicationUrl(HttpServletRequest request) {
